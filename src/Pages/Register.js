@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MyContext } from '../Context/AuthContext';
 
 const Register = () => {
@@ -63,6 +63,7 @@ const Register = () => {
                     <input type="password" name='password' placeholder="password" className="input input-bordered" />
 
                 </div>
+                <Link to="/login" className='mt-3 text-blue-600'>login here</Link>
                 <div className="form-control mt-6">
                     <button type='submit' className="btn btn-primary">Register</button>
                 </div>
